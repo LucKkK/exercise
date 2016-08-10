@@ -3,7 +3,7 @@
 	echo out($name);
 	function out ( $str , $ucfirst = true){
     	$str = ucwords(str_replace('_', ' ', $str));
-    	$str = str_replace(' ','',lcfirst($str));
-    	 return $ucfirst ? ucfirst($str) : $str;
+    	$str = str_replace(' ','',$str); 
+    	 return $str;
 	}
 ?>
